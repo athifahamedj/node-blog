@@ -20,6 +20,10 @@ app.get("", (req, res) => {
   res.render("index", locals);
 });
 
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
 app.listen(PORT, (req, res) => {
   console.log(`Port ${PORT} working`);
 });
